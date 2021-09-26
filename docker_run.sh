@@ -1,3 +1,8 @@
 #!/bin/bash
 
-docker run --rm --mount type=bind,source="$(pwd)",target=/host  -it test_smh4 /make.sh
+docker run --rm -it \
+--mount type=bind,source="$(pwd)",target=/host \
+test_smh4:latest \
+/make.sh
+
+
