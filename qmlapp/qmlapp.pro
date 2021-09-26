@@ -36,11 +36,9 @@ RESOURCES += qml.qrc \
 
 DISTFILES += \
     qpp.qml \
-    Globals.qml \
-    MainView.qml
+    Globals.qml
 
 OTHER_FILES += \
     qpp.qml \
-    Globals.qml \
-    MainView.qml
+    Globals.qml
 
