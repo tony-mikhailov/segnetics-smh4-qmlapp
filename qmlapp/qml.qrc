@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Globals.qml</file>
+        <file>app.qml</file>
+        <file>MainView.qml</file>
+    </qresource>
+</RCC>
