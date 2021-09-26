@@ -2,6 +2,7 @@ pragma Singleton
 import QtQuick 2.9
 import QtQuick.Controls.Material 2.1
 
+import dev.pump.station.gui 1.0
 
 QtObject {
     property int textSize: 20
