@@ -7,9 +7,6 @@ const int SMH4C::SCREEN_HEIGHT = 272;
 const int SMH4C::DEFAULT_HEADER_HEIGHT = 24;
 const int SMH4C::DEFAULT_HEADER_FONT_SIZE = 11;
 
-//const QString SMH4C::DEFAULT_FONT_FAMILY = "Bitstream Charter";
-//const QString SMH4C::DEFAULT_FONT_FAMILY = "CasioNostalgia";
-
 const QString SMH4C::NAVBAR_FONT_FAMILY   = "Roboto Condensed";
 const QString SMH4C::STATUS_FONT_FAMILY   = "Roboto";
 const QString SMH4C::MENU_FONT_FAMILY   = "Roboto";

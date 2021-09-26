@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
 
     const QFont fixedFont = QFontDatabase::systemFont(QFontDatabase::FixedFont);
     engine.rootContext()->setContextProperty("fixedFont", fixedFont);
-    qmlRegisterSingletonType(QUrl("qrc:/Globals.qml"), "dev.pump.station.gui", 1, 0, "Globals");
+
+    qmlRegisterSingletonType(QUrl("qrc:/Globals.qml"), "globals.gui.qmlapp", 1, 0, "Globals");
 
     engine.load(QUrl(QStringLiteral("qrc:/app.qml")));
     if (engine.rootObjects().isEmpty())

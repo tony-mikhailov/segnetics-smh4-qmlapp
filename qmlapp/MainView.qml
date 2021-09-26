@@ -4,7 +4,7 @@ import QtQuick.Controls.Material 2.1
 import QtGraphicalEffects 1.0
 import QtQuick.Layouts 1.3
 
-import dev.pump.station.gui 1.0
+import globals.gui.qmlapp 1.0
 
 Item {
 

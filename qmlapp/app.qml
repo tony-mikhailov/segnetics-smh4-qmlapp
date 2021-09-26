@@ -4,7 +4,7 @@ import QtQuick.Layouts 1.3
 import QtQuick.Dialogs 1.2
 import QtGraphicalEffects 1.0
 
-import dev.pump.station.gui 1.0;
+import globals.gui.qmlapp 1.0;
 
 ApplicationWindow {
     id: root
@@ -37,7 +37,7 @@ ApplicationWindow {
                         font: Globals.topHeaderFnt
                         width: headerItem.width - dateTimeLayout.width //headerItem.width - topHeaderTimeText.width
                         height: 22
-                        text: "Hello"
+                        text: "Qml Application"
                         verticalAlignment: Text.AlignBottom
                     }
                     Row {
@@ -102,7 +102,7 @@ ApplicationWindow {
         width: 480
         height: 40
         Text {
-	   text: "text"
+           text: "text"
         }
     }
 }

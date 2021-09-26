@@ -2,8 +2,6 @@ pragma Singleton
 import QtQuick 2.9
 import QtQuick.Controls.Material 2.1
 
-import dev.pump.station.gui 1.0
-
 QtObject {
     property int textSize: 20
 
@@ -24,7 +22,7 @@ QtObject {
     property font  timeHeaderFnt: Qt.font({family: "Oxygen Mono", pixelSize: 17, bold: true})
 
     property int   tableHeaderHeight: 14
-    property color mainViewBackground:  gui.isGuiDark ? "#000000" : "#ffffff"
+    property color mainViewBackground: "#7f7f7f"
 
     property color processStatusBar: "#207f20"
     property color processStoppedStatusBar: "#d5d5d5"
