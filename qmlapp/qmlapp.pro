@@ -31,14 +31,15 @@ HEADERS += \
     smh4c.h \
     smh4.h 
 
-RESOURCES += qml.qrc \
-    qml.qrc
+RESOURCES += qml.qrc
 
 DISTFILES += \
+    SMH4.qml \
     qpp.qml \
     Globals.qml
 
 OTHER_FILES += \
+    SMH4.qml \
     qpp.qml \
     Globals.qml
 

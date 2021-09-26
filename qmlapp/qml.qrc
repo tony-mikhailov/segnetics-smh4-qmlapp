@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>Globals.qml</file>
         <file>app.qml</file>
+        <file>SMH4.qml</file>
+        <file>img/mw.bmp</file>
     </qresource>
 </RCC>
