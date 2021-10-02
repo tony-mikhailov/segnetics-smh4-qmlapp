@@ -95,21 +95,17 @@ ApplicationWindow {
         SwipeView {
             id: tabBar
             focus: true
-            Image {
+            AnimatedImage {
                 id: img1
-                source: "qrc:/img/mw.bmp"
+                source: "qrc:/img/rot.gif"
+                width: 480
+                height: 252
             }
-            Image {
+            AnimatedImage {
                 id: img2
-                source: "qrc:/img/mw.bmp"
-            }
-            Image {
-                id: img3
-                source: "qrc:/img/mw.bmp"
-            }
-            Image {
-                id: img4
-                source: "qrc:/img/mw.bmp"
+                source: "qrc:/img/eg.gif"
+                width: 480
+                height: 252
             }
 
             Keys.onReleased : {
@@ -117,13 +113,13 @@ ApplicationWindow {
                 if (event.key === SMH4.key_STOP) {
                     // evice.stopMining();
                 } else if (event.key === Qt.Key_Left) {
-                    if (swipeView.currentIndex === 0) {
+                    if (tabBar.currentIndex === 0) {
                         tabBar.currentIndex = tabBar.count - 1;
                     } else {
                         tabBar.decrementCurrentIndex();
                     }
                 } else if (event.key === Qt.Key_Right) {
-                    if (swipeView.currentIndex === (tabBar.count - 1)) {
+                    if (tabBar.currentIndex === (tabBar.count - 1)) {
                         tabBar.currentIndex = 0;
                     } else {
                         tabBar.incrementCurrentIndex();

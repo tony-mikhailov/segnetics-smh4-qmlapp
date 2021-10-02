@@ -1,3 +1,5 @@
+#include <QDebug>
+#include <QLibraryInfo>
 #include <QObject>
 #include <QQmlEngine>
 #include <QJSEngine>
@@ -25,6 +27,9 @@ int main(int argc, char *argv[])
     engine.load(QUrl(QStringLiteral("qrc:/app.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;
+
+    qDebug() << "QLibraryInfo::PluginsPath" << QLibraryInfo::location(QLibraryInfo::PluginsPath);
+
 
     int retCode = app.exec();
 
