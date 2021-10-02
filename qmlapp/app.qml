@@ -14,7 +14,6 @@ ApplicationWindow {
     title: qsTr("App Title") 
 
 
-
     Component.onCompleted: {
 
     }
@@ -116,37 +115,21 @@ ApplicationWindow {
             Keys.onReleased : {
                 var oldInx = tabBar.currentIndex;
                 if (event.key === SMH4.key_STOP) {
-                    //device.stopMining();
+                    // evice.stopMining();
                 } else if (event.key === Qt.Key_Left) {
-                    if (swipeView.currentIndex == 0) {
+                    if (swipeView.currentIndex === 0) {
                         tabBar.currentIndex = tabBar.count - 1;
                     } else {
                         tabBar.decrementCurrentIndex();
                     }
                 } else if (event.key === Qt.Key_Right) {
-                    if (swipeView.currentIndex == (tabBar.count - 1)) {
+                    if (swipeView.currentIndex === (tabBar.count - 1)) {
                         tabBar.currentIndex = 0;
                     } else {
                         tabBar.incrementCurrentIndex();
                     }
                 }
 
-                if (event.key == SMH4.key_F2) {
-                    tabBar.currentIndex = 0;
-                } else if (event.key == SMH4.key_F3) {
-                    tabBar.currentIndex = 1;
-                } else if (event.key == SMH4.key_F4) {
-                    tabBar.currentIndex = 2;
-                } else if (event.key == SMH4.key_F5) {
-                    tabBar.currentIndex = 3;
-//                    notifier.hideNotify();
-                } else if (event.key == SMH4.key_F6) {
-                    //gui.hideNotifierAndCleanLastEvents();
-                }
-
-                if (tabBar.currentIndex != oldInx && tabBar.currentIndex == 0) {
-                    //gui.selectEvent(0);
-                }
                 console.log(event)
             }
 
