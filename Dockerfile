@@ -13,7 +13,7 @@ ADD ./archives/deb.tar.gz /home/build
 
 FROM base_build
 
-COPY ./qmlapp /home/build/qmlapp
+#COPY ./qmlapp /home/build/qmlapp
 
 COPY ./make.sh /make.sh
 RUN chmod +x /make.sh

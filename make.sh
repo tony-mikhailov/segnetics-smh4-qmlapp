@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cd /home/build/qmlapp && 
+cp -r /host/qmlapp /home/build/ &&
+cd /home/build/qmlapp &&  
 /home/build/qt/5.9.4/armhf/bin/qmake qmlapp.pro && 
 make && 
 cp qmlapp /home/build/DEB/qmlapp/ &&
