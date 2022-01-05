@@ -19,7 +19,6 @@ QtObject {
     property font  dateHeaderFnt: Qt.font({family: "Oxygen Mono", pixelSize: 14, bold: false})
     property font  timeHeaderFnt: Qt.font({family: "Oxygen Mono", pixelSize: 17, bold: true})
 
-    property int   tableHeaderHeight: 14
     property color mainViewBackground: "#7f7f7f"
 
     property color headerText: "#ffffff" 
