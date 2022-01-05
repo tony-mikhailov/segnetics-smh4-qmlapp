@@ -3,7 +3,6 @@ import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import QtQuick.Dialogs 1.2
 import QtGraphicalEffects 1.0
-import Qt3D.Core 2.0
 
 import globals.gui.qmlapp 1.0;
 
