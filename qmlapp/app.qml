@@ -30,7 +30,7 @@ ApplicationWindow {
                         id: topHeaderText
                         color: Globals.topHeaderText
                         font: Globals.topHeaderFnt
-                        width: headerItem.width - dateTimeLayout.width //headerItem.width - topHeaderTimeText.width
+                        width: headerItem.width - dateTimeLayout.width
                         height: 22
                         text: qsTr("Полёт нормальный!")
                         verticalAlignment: Text.AlignBottom
@@ -81,7 +81,6 @@ ApplicationWindow {
             var d = new Date();
             topHeaderDateText.text = Qt.formatDateTime(d, ("yyyy.MM.dd"));
             topHeaderTimeText.text = Qt.formatDateTime(d, ("HH:mm:ss"));
-            //topHeaderText.width = dateTimeLayout.width;
         }
     }
 
@@ -95,43 +94,29 @@ ApplicationWindow {
                 width: 480
                 height: 252
                 AnimatedImage {
-                    id: img2
+                    id: backAnimationImg
                     source: "qrc:/img/pakfa.gif"
                 }
 
-                Rectangle {
-                    x: 45
-                    y: 17
+                Text {
+                    x: 20
+                    y: 30
 
-                    width: 53
-                    height: 107
-                    radius: 5
-                }
-
-            }
-
-            Keys.onReleased : {
-                var oldInx = tabBar.currentIndex;
-                if (event.key === SMH4.key_STOP) {
-                    // stop !!!;
-                } else if (event.key === Qt.Key_Left) {
-                    if (tabBar.currentIndex === 0) {
-                        tabBar.currentIndex = tabBar.count - 1;
-                    } else {
-                        tabBar.decrementCurrentIndex();
-                    }
-                } else if (event.key === Qt.Key_Right) {
-                    if (tabBar.currentIndex === (tabBar.count - 1)) {
-                        tabBar.currentIndex = 0;
-                    } else {
-                        tabBar.incrementCurrentIndex();
+                    width: 190
+                    height: 147
+                    wrapMode: "WordWrap"
+                    text: qsTr("Это текст поверх анимации на полупрозрачном фоне")
+                    font: Qt.font({family: "Roboto", pixelSize: 24, bold: true, color: "#ffffff"})
+                    color: "#ffffff"
+                    Rectangle {
+                        anchors.fill: parent
+                        radius: 5
+                        color: "#D0202020"
+                        z: parent.z - 1
                     }
                 }
 
-                console.log(event)
             }
-
-
         }
     ]
 
