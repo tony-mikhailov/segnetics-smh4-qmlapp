@@ -101,12 +101,13 @@ ApplicationWindow {
                 Text {
                     x: 20
                     y: 30
-
+                    textFormat: Text.RichText
                     width: 190
                     height: 147
                     wrapMode: "WordWrap"
-                    text: qsTr("Это текст поверх анимации на полупрозрачном фоне")
-                    font: Qt.font({family: "Roboto", pixelSize: 24, bold: true, color: "#ffffff"})
+                    text: qsTr("Это <b><i>rich</i></b>-текст на полупрозрачном фоне и <font color='red'>поверх анимации</font>  <i> =)</i>")
+//                    font: Qt.font({family: "Roboto", pixelSize: 24, bold: true, color: "#ffffff"})
+                    font: Qt.font({family: "Roboto", pixelSize: 24})
                     color: "#ffffff"
                     Rectangle {
                         anchors.fill: parent
