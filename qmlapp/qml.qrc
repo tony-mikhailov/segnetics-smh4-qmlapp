@@ -3,7 +3,6 @@
         <file>Globals.qml</file>
         <file>app.qml</file>
         <file>SMH4.qml</file>
-        <file>img/rot.gif</file>
-        <file>img/eg.gif</file>
+        <file>img/pakfa.gif</file>
     </qresource>
 </RCC>

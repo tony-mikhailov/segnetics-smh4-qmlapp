@@ -3,6 +3,7 @@ import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import QtQuick.Dialogs 1.2
 import QtGraphicalEffects 1.0
+import Qt3D.Core 2.0
 
 import globals.gui.qmlapp 1.0;
 
@@ -11,12 +12,7 @@ ApplicationWindow {
     visible: true
     width: 480
     height: 272
-    title: qsTr("App Title") 
-
-
-    Component.onCompleted: {
-
-    }
+    title: qsTr("Полёт нормальный!")
 
     header: Item {
         width: 480
@@ -30,14 +26,14 @@ ApplicationWindow {
                     id: topHeaderRect
                     width: 480
                     height: 20
-
+                    color: Globals.topHeaderBackground
                     Text {
                         id: topHeaderText
                         color: Globals.topHeaderText
                         font: Globals.topHeaderFnt
                         width: headerItem.width - dateTimeLayout.width //headerItem.width - topHeaderTimeText.width
                         height: 22
-                        text: "Qml Application"
+                        text: qsTr("Полёт нормальный!")
                         verticalAlignment: Text.AlignBottom
                     }
                     Row {
@@ -95,23 +91,30 @@ ApplicationWindow {
         SwipeView {
             id: tabBar
             focus: true
-            AnimatedImage {
-                id: img1
-                source: "qrc:/img/rot.gif"
+            Item {
+                id: contentItem
                 width: 480
                 height: 252
-            }
-            AnimatedImage {
-                id: img2
-                source: "qrc:/img/eg.gif"
-                width: 480
-                height: 252
+                AnimatedImage {
+                    id: img2
+                    source: "qrc:/img/pakfa.gif"
+                }
+
+                Rectangle {
+                    x: 45
+                    y: 17
+
+                    width: 53
+                    height: 107
+                    radius: 5
+                }
+
             }
 
             Keys.onReleased : {
                 var oldInx = tabBar.currentIndex;
                 if (event.key === SMH4.key_STOP) {
-                    // evice.stopMining();
+                    // stop !!!;
                 } else if (event.key === Qt.Key_Left) {
                     if (tabBar.currentIndex === 0) {
                         tabBar.currentIndex = tabBar.count - 1;
@@ -133,12 +136,9 @@ ApplicationWindow {
         }
     ]
 
-    footer: Item {
-        id: footerItem
-        width: 480
-        height: 40
-        Text {
-           text: "text"
-        }
-    }
+//    footer: Item {
+//        id: footerItem
+//        width: 480
+//        height: 40
+//    }
 }
