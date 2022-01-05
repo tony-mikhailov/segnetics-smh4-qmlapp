@@ -22,12 +22,9 @@ unix:!macx: {
 }
 
 
-SOURCES += main.cpp \
-    smh4c.cpp 
+SOURCES += main.cpp
 
-HEADERS += \
-    smh4c.h \
-    smh4.h 
+HEADERS +=
 
 RESOURCES += qml.qrc
 

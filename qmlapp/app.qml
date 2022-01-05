@@ -136,9 +136,4 @@ ApplicationWindow {
         }
     ]
 
-//    footer: Item {
-//        id: footerItem
-//        width: 480
-//        height: 40
-//    }
 }
