@@ -105,8 +105,7 @@ ApplicationWindow {
                     width: 190
                     height: 147
                     wrapMode: "WordWrap"
-                    text: qsTr("Это <b><i>rich</i></b>-текст на полупрозрачном фонt, <font color='red'>поверх анимации</font>  <i> =)</i>")
-//                    font: Qt.font({family: "Roboto", pixelSize: 24, bold: true, color: "#ffffff"})
+                    text: qsTr("Это <b><i>rich</i></b>-текст на полупрозрачном фоне, <font color='red'>поверх анимации</font>  <i> =)</i>")
                     font: Qt.font({family: "Roboto", pixelSize: 24})
                     color: "#ffffff"
                     Rectangle {
