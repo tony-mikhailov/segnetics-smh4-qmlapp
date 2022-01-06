@@ -102,7 +102,7 @@ ApplicationWindow {
                     x: 20
                     y: 30
                     textFormat: Text.RichText
-                    width: 190
+                    width: 220
                     height: 147
                     wrapMode: "WordWrap"
                     text: qsTr("Это <b><i>rich</i></b>-текст на полупрозрачном фоне, <font color='red'>поверх анимации</font>  <i> =)</i>")

@@ -1,4 +1,4 @@
-QT += quick concurrent
+QT += quick
 CONFIG += c++11
 CODECFORSRC = UTF-8
 DEFINES += QT_DEPRECATED_WARNINGS
