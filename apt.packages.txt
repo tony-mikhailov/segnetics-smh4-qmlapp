@@ -507,4 +507,4 @@ libc6:i386
 libncurses5:i386
 libstdc++6:i386
 zlib1g:i386
-
+wget
